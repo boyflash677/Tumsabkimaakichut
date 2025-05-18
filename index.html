@@ -31,7 +31,7 @@
       justify-content:center;
       min-height:100vh;
       padding:1rem;
-      overflow:hidden;
+      overflow-y:auto;          /* ← scrolling enabled */
       position:relative;
     }
     .container{
@@ -149,37 +149,30 @@
 
     <!-- LINKS -->
     <section class="links">
-      <!-- 1 – Full Cine Drop -->
       <a href="https://t.me/FullCineDrop" class="link-btn" target="_blank" rel="noopener">
         <span>🎬</span> Viral Movies • Full Cine Drop
       </a>
 
-      <!-- 2 – Instagram -->
       <a href="https://www.instagram.com/vipin_txt?igsh=b2s2dzljbDZqcmxy" class="link-btn" target="_blank" rel="noopener">
         <span>📸</span> Instagram
       </a>
 
-      <!-- 3 – ToolsBurst -->
       <a href="https://t.me/toolsburst" class="link-btn" target="_blank" rel="noopener">
         <span>🛠️</span> ToolsBurst • Hacking &amp; Modded APKs
       </a>
 
-      <!-- 4 – Bargain Box -->
       <a href="https://t.me/thebargainbox1" class="link-btn" target="_blank" rel="noopener">
         <span>🛍️</span> The Bargain Box • Loot Deals
       </a>
 
-      <!-- 5 – Adult Zone -->
       <a href="https://t.me/xvideos_com009" class="link-btn" target="_blank" rel="noopener">
         <span>🔞</span> Adult Zone • 18+
       </a>
 
-      <!-- 6 – The Space -->
       <a href="https://t.me/thespace09" class="link-btn" target="_blank" rel="noopener">
         <span>🚀</span> The Space • Community Chat
       </a>
 
-      <!-- 7 – Telegram Profile -->
       <a href="https://t.me/Innocent_txt" class="link-btn" target="_blank" rel="noopener">
         <span>👤</span> Telegram Profile
       </a>
@@ -204,8 +197,8 @@
       ctx.fillStyle="#0ff";
       ctx.font=fontSize+"px monospace";
       drops.forEach((y,i)=>{
-        const text=letters[Math.floor(Math.random()*letters.length)];
-        ctx.fillText(text,i*fontSize,y*fontSize);
+        const t=letters[Math.floor(Math.random()*letters.length)];
+        ctx.fillText(t,i*fontSize,y*fontSize);
         if(y*fontSize>canvas.height&&Math.random()>0.975)drops[i]=0;
         drops[i]++;
       });
