@@ -1,83 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>innocent_txt | Links Hub</title>
+<!-- ye hai tera last <section class="links"> ke andar updated part -->
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+<section class="links">
+  <!-- 1 -->
+  <a href="https://t.me/FullCineDrop" class="link-btn" target="_blank" rel="noopener"><span>🎬</span> Viral Movies • Full Cine Drop</a>
 
-  <style>
-    :root{--bg:#0d0d0d;--card:#1a1a1a;--accent:#ff005a;--text:#fff;}
-    *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
-    body{
-      background:var(--bg);color:var(--text);
-      display:flex;align-items:center;justify-content:center;
-      min-height:100vh;padding:1rem;
-      overflow-y:auto;position:relative;
-    }
-    .container{width:100%;max-width:430px;text-align:center;position:relative;z-index:2;}
-    .avatar{width:130px;height:130px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);margin-bottom:1rem;position:relative;z-index:3;}
-    h1{font-size:2rem;font-weight:700;margin-bottom:.25rem;position:relative;z-index:3;}
-    p.tagline{font-size:1rem;font-weight:300;opacity:.8;margin-bottom:1.2rem;position:relative;z-index:3;}
-    p.welcome{font-size:.95rem;line-height:1.6;background:var(--card);padding:.9rem 1rem;border:1px solid var(--accent);border-radius:12px;margin-bottom:1.5rem;position:relative;z-index:3;}
-    .links{display:grid;gap:1rem;position:relative;z-index:3;}
-    .link-btn{display:flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem 1.1rem;background:var(--card);border:2px solid transparent;border-radius:14px;font-size:1rem;font-weight:600;text-decoration:none;color:var(--text);transition:.25s;position:relative;}
-    .link-btn:hover{border-color:var(--accent);transform:translateY(-4px) scale(1.02);}
-    .link-btn span{font-size:1.2rem;}
-    footer{margin-top:2rem;font-size:.75rem;opacity:.6;position:relative;z-index:3;}
-    #matrixCanvas{position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:1;background:transparent;}
-  </style>
-</head>
-<body>
-  <canvas id="matrixCanvas"></canvas>
+  <!-- 2 -->
+  <a href="https://t.me/toolsburst" class="link-btn" target="_blank" rel="noopener"><span>🛠️</span> ToolsBurst • Hacking &amp; Modded APKs</a>
 
-  <main class="container">
-    <img src="https://i.ibb.co/qLFTrbgd/IMG-20250517-162502-185.jpg" alt="Profile picture" class="avatar" />
-    <h1>@innocent_txt</h1>
-    <p class="tagline">Creepy internet lore • Tech tricks • Scam busters</p>
+  <!-- 3 -->
+  <a href="https://t.me/thebargainbox1" class="link-btn" target="_blank" rel="noopener"><span>🛍️</span> The Bargain Box • Loot Deals</a>
 
-    <p class="welcome">
-      ✨ <strong>Welcome, Explorer!</strong><br />
-      Dive into a world of hacks, hidden deals &amp; spicy secrets.<br />
-      Scroll down and pick your portal ⤵️
-    </p>
+  <!-- 4 -->
+  <a href="https://t.me/thespace09" class="link-btn" target="_blank" rel="noopener"><span>🚀</span> The Space • Community Chat</a>
 
-    <section class="links">
-      <!-- 1 -->
-      <a href="https://t.me/FullCineDrop" class="link-btn" target="_blank" rel="noopener"><span>🎬</span> Viral Movies • Full Cine Drop</a>
+  <!-- 5 – Telegram Contact -->
+  <a href="https://t.me/Innocent_txt" class="link-btn" target="_blank" rel="noopener"><span>📨</span> Contact Admin</a>
 
-      <!-- 2 -->
-      <a href="https://t.me/toolsburst" class="link-btn" target="_blank" rel="noopener"><span>🛠️</span> ToolsBurst • Hacking &amp; Modded APKs</a>
+  <!-- 6 – Instagram Contact -->
+  <a href="https://www.instagram.com/vipin_txt?igsh=b2s2dzljbDZqcmxy" class="link-btn" target="_blank" rel="noopener"><span>📸</span> Contact Admin</a>
 
-      <!-- 3 -->
-      <a href="https://t.me/thebargainbox1" class="link-btn" target="_blank" rel="noopener"><span>🛍️</span> The Bargain Box • Loot Deals</a>
+  <!-- SHOP CATEGORY START -->
+  <p class="welcome">🛒 <strong>Shop</strong><br />Explore our curated picks</p>
 
-      <!-- 4 -->
-      <a href="https://t.me/thespace09" class="link-btn" target="_blank" rel="noopener"><span>🚀</span> The Space • Community Chat</a>
-
-      <!-- 5 – Telegram Contact -->
-      <a href="https://t.me/Innocent_txt" class="link-btn" target="_blank" rel="noopener"><span>📨</span> Contact Admin</a>
-
-      <!-- 6 – Instagram Contact -->
-      <a href="https://www.instagram.com/vipin_txt?igsh=b2s2dzljbDZqcmxy" class="link-btn" target="_blank" rel="noopener"><span>📸</span> Contact Admin</a>
-    </section>
-
-    <footer>© 2025 innocent_txt</footer>
-  </main>
-
-  <script>
-    const canvas=document.getElementById("matrixCanvas"),ctx=canvas.getContext("2d");
-    function resize(){canvas.width=innerWidth;canvas.height=innerHeight;} resize();
-    const letters="01ABCDEF1234567890@#$%&*+-?<>".split(""),font=16,cols=Math.floor(canvas.width/font),drops=Array.from({length:cols},()=>Math.random()*canvas.height);
-    function draw(){ctx.fillStyle="rgba(13,13,13,0.1)";ctx.fillRect(0,0,canvas.width,canvas.height);
-      ctx.fillStyle="#0ff";ctx.font=font+"px monospace";
-      drops.forEach((y,i)=>{ctx.fillText(letters[Math.floor(Math.random()*letters.length)],i*font,y*font);if(y*font>canvas.height&&Math.random()>0.975)drops[i]=0;drops[i]++;});
-      requestAnimationFrame(draw);}
-    draw(); addEventListener("resize",resize);
-  </script>
-</body>
-</html>
+  <a href="https://link.meesho.co/CNBhGq1g3g" class="link-btn" target="_blank" rel="noopener">
+    <img src="https://i.ibb.co/2d4r5mZ/blackpink-notebook.jpg" alt="BLACKPINK Notebook" style="width:50px;height:50px;border-radius:8px;object-fit:cover;" />
+    <span style="text-align:left;">
+      BLACKPINK Notebook<br />
+      <small style="font-weight:300;opacity:0.8;">Stylish spiral diary</small>
+    </span>
+  </a>
+  <!-- SHOP CATEGORY END -->
+</section>
