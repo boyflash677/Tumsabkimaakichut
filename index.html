@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>innocent_txt | Links Hub</title>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
@@ -16,98 +18,110 @@
       display:flex;align-items:center;justify-content:center;
       min-height:100vh;padding:1rem;overflow-y:auto;position:relative;
     }
-    .container{width:100%;max-width:430px;text-align:center;position:relative;z-index:2;}
+    .container{width:100%;max-width:450px;text-align:center;position:relative;z-index:2;}
     .avatar{width:130px;height:130px;border-radius:50%;object-fit:cover;border:4px solid var(--accent);margin-bottom:1rem;}
     h1{font-size:2rem;font-weight:700;margin-bottom:.25rem;}
     p.tagline{font-size:1rem;font-weight:300;opacity:.8;margin-bottom:1.2rem;}
-    p.welcome{font-size:.95rem;line-height:1.6;background:var(--card);padding:.9rem 1rem;border:1px solid var(--accent);border-radius:12px;margin-bottom:1.5rem;}
-    .links{display:grid;gap:1rem;margin-bottom:2rem;}
+    p.welcome{
+      font-size:.95rem;line-height:1.6;background:var(--card);padding:.9rem 1rem;
+      border:1px solid var(--accent);border-radius:12px;margin-bottom:1.5rem;
+    }
+    .section-title{
+      font-size:1.1rem;font-weight:600;margin:1.5rem 0 .5rem;opacity:.9;
+    }
+    .links{display:grid;gap:1rem;}
     .link-btn{
       display:flex;align-items:center;justify-content:center;gap:.6rem;
-      padding:1rem;background:var(--card);border:2px solid transparent;
+      padding:1rem 1.1rem;background:var(--card);border:2px solid transparent;
       border-radius:14px;font-size:1rem;font-weight:600;text-decoration:none;
       color:var(--text);transition:.25s;
     }
     .link-btn:hover{border-color:var(--accent);transform:translateY(-4px) scale(1.02);}
-    .link-btn img.icon{width:24px;height:24px;object-fit:contain;}
+    .link-btn span{font-size:1.2rem;}
+    .icon-img{width:20px;height:20px;object-fit:contain;}
     footer{margin-top:2rem;font-size:.75rem;opacity:.6;}
     #matrixCanvas{position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:1;background:transparent;}
-    .section-title {font-size:1.2rem;font-weight:700;margin:1.2rem 0 .8rem;color:var(--accent);}
   </style>
 </head>
 <body>
-<canvas id="matrixCanvas"></canvas>
+  <canvas id="matrixCanvas"></canvas>
 
-<main class="container">
-  <img src="https://i.ibb.co/qLFTrbgd/IMG-20250517-162502-185.jpg" alt="Profile picture" class="avatar" />
-  <h1>@innocent_txt</h1>
-  <p class="tagline">Creepy internet lore • Tech tricks • Scam busters</p>
+  <main class="container">
+    <img src="https://i.ibb.co/qLFTrbgd/IMG-20250517-162502-185.jpg" alt="Profile picture" class="avatar" />
+    <h1>@innocent_txt</h1>
+    <p class="tagline">Creepy internet lore • Tech tricks • Scam busters</p>
 
-  <p class="welcome">
-    ✨ <strong>Welcome, Explorer!</strong><br />
-    Dive into a world of hacks, hidden deals &amp; spicy secrets.<br />
-    Scroll down and pick your portal ⤵️
-  </p>
+    <p class="welcome">
+      👁️‍🗨️ <strong>Welcome to the Digital Underworld!</strong><br />
+      Yahan tumhe milenge hacks, tools, dark tricks, earning secrets aur wo sab kuch jo surface web pe nahi milta.<br /><br />
+      Apna intention clear rakho:<br />
+      📥 Kamaana hai?<br />
+      📤 Seekhna hai?<br />
+      📦 Kharidna ya bechna hai?<br /><br />
+      Sab kuch yahin hai. Ek baar scroll maaro — aur jo chahiye, wo mil jaayega. 🔐
+    </p>
 
-  <!-- OUR SERVICES -->
-  <div class="section-title">🛠️ Our Services (Paid)</div>
-  <section class="links">
-    <div class="link-btn">🎯 BGMl Hacks - ₹149</div>
-    <div class="link-btn">🔥 FreeFire Hacks - ₹129</div>
-    <div class="link-btn">🎨 Colour Prediction Site Hacks - ₹199</div>
-    <div class="link-btn">📚 Hacking Methods PDFs (On Demand) - ₹99</div>
-    <div class="link-btn">💸 Earning Ways Roadmap - ₹149</div>
-    <div class="link-btn">📱 Instagram Followers & Likes - ₹99</div>
-    <div class="link-btn">🤖 Custom Music Bots / Telegram Bots - ₹249</div>
-    <div class="link-btn">💼 Buy/Sell Telegram Group/Channel - ₹Deal Based</div>
-    <div class="link-btn">📞 Get Numbers on Rent - ₹49/hr</div>
-    <div class="link-btn">📟 Termux Course (Basic to Advanced) - ₹249</div>
-    <div class="link-btn">🐧 Kali Linux Course (Basic to Advanced) - ₹349</div>
-    <div class="link-btn">💳 Carding Course (Basic to Advanced) - ₹399</div>
-    <div class="link-btn">🔍 Custom Requests? DM Us!</div>
-  </section>
+    <h2 class="section-title">🧰 Our Services</h2>
+    <p class="welcome">
+      🔹 Tools, Hacks & Scripts (On Demand)<br/>
+      🔹 Paid Telegram Bots / Music Bots<br/>
+      🔹 Channel/Group Selling & Buying<br/>
+      🔹 Insta Followers / Likes Tools<br/>
+      🔹 Termux, Kali Linux, Carding Courses<br/>
+      🔹 BGMI, Freefire Hacks / Color Prediction<br/>
+      🔹 Everything You Need... Just Ask 😈
+    </p>
 
-  <!-- JOIN OUR CHANNELS -->
-  <div class="section-title">📲 Join Our Channels & Groups</div>
-  <section class="links">
-    <a href="https://t.me/FullCineDrop" class="link-btn" target="_blank"><span>🎬</span> Full Cine Drop</a>
-    <a href="https://t.me/toolsburst" class="link-btn" target="_blank"><span>🛠️</span> ToolsBurst</a>
-    <a href="https://t.me/thebargainbox1" class="link-btn" target="_blank"><span>🛍️</span> The Bargain Box</a>
-    <a href="https://t.me/thespace09" class="link-btn" target="_blank"><span>🚀</span> The Space (Chat)</a>
-  </section>
+    <h2 class="section-title">🚀 Join Our Channels / Groups <span style="color: var(--accent);">(Free)</span></h2>
 
-  <!-- CONTACT -->
-  <div class="section-title">📩 Contact Admin</div>
-  <section class="links">
-    <a href="https://t.me/Innocent_txt" class="link-btn" target="_blank">
-      <img src="https://i.ibb.co/QKKF8k6/telegram.png" class="icon" alt="Telegram"/> Telegram
-    </a>
-    <a href="https://www.instagram.com/vipin_txt?igsh=b2s2dzljbDZqcmxy" class="link-btn" target="_blank">
-      <img src="https://i.ibb.co/F3P3w3s/instagram.png" class="icon" alt="Instagram"/> Instagram
-    </a>
-  </section>
+    <section class="links">
+      <a href="https://t.me/FullCineDrop" class="link-btn" target="_blank"><span>🎬</span> Viral Movies • Full Cine Drop</a>
+      <a href="https://t.me/toolsburst" class="link-btn" target="_blank"><span>🛠️</span> ToolsBurst • Hacking & Modded APKs</a>
+      <a href="https://t.me/thebargainbox1" class="link-btn" target="_blank"><span>🛍️</span> The Bargain Box • Loot Deals</a>
+      <a href="https://t.me/thespace09" class="link-btn" target="_blank"><span>🚀</span> The Space • Community Chat</a>
+    </section>
 
-  <footer>© 2025 innocent_txt</footer>
-</main>
+    <h2 class="section-title">💸 Paid Tools (DM to Buy)</h2>
+    <section class="links">
+      <a href="#" class="link-btn"><span>🎯</span> BGMI / Freefire Hacks - ₹499</a>
+      <a href="#" class="link-btn"><span>🎲</span> Color Prediction Site Hacks - ₹299</a>
+      <a href="#" class="link-btn"><span>📚</span> Hacking PDF Bundle - ₹399</a>
+      <a href="#" class="link-btn"><span>🧠</span> Earning Ways Roadmap - ₹149</a>
+      <a href="#" class="link-btn"><span>🤖</span> Custom Telegram Bots - ₹699</a>
+      <a href="#" class="link-btn"><span>📈</span> Followers/Like Tools - ₹349</a>
+      <a href="#" class="link-btn"><span>📞</span> Rent Numbers - ₹199</a>
+      <a href="#" class="link-btn"><span>💻</span> Termux/Kali/Carding Courses - ₹499</a>
+    </section>
 
-<script>
-  const canvas = document.getElementById("matrixCanvas"), ctx = canvas.getContext("2d");
-  function resize(){canvas.width=innerWidth;canvas.height=innerHeight;} resize();
-  const letters = "01ABCDEF1234567890@#$%&*+-?<>".split(""), font = 16,
-        cols = Math.floor(canvas.width/font),
-        drops = Array.from({length: cols}, ()=>Math.random()*canvas.height);
-  function draw(){
-    ctx.fillStyle = "rgba(13,13,13,0.1)";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "#0ff"; ctx.font = font + "px monospace";
-    drops.forEach((y, i)=>{
-      ctx.fillText(letters[Math.floor(Math.random()*letters.length)], i*font, y*font);
-      if(y*font > canvas.height && Math.random() > 0.975) drops[i] = 0;
-      drops[i]++;
-    });
-    requestAnimationFrame(draw);
-  }
-  draw(); addEventListener("resize", resize);
-</script>
+    <h2 class="section-title">📞 Contact Admin</h2>
+    <section class="links">
+      <a href="https://t.me/Innocent_txt" class="link-btn" target="_blank">
+        <img src="https://i.ibb.co/2KkXskK/telegram-icon.png" class="icon-img" alt="Telegram" />
+        Telegram DM
+      </a>
+      <a href="https://www.instagram.com/vipin_txt?igsh=b2s2dzljbDZqcmxy" class="link-btn" target="_blank">
+        <img src="https://i.ibb.co/YW1xprY/instagram-icon.png" class="icon-img" alt="Instagram" />
+        Instagram DM
+      </a>
+    </section>
+
+    <footer>© 2025 innocent_txt</footer>
+  </main>
+
+  <script>
+    const canvas=document.getElementById("matrixCanvas"),ctx=canvas.getContext("2d");
+    function resize(){canvas.width=innerWidth;canvas.height=innerHeight;} resize();
+    const letters="01ABCDEF1234567890@#$%&*+-?<>".split(""),font=16,cols=Math.floor(canvas.width/font),drops=Array.from({length:cols},()=>Math.random()*canvas.height);
+    function draw(){
+      ctx.fillStyle="rgba(13,13,13,0.1)";ctx.fillRect(0,0,canvas.width,canvas.height);
+      ctx.fillStyle="#0ff";ctx.font=font+"px monospace";
+      drops.forEach((y,i)=>{
+        ctx.fillText(letters[Math.floor(Math.random()*letters.length)],i*font,y*font);
+        if(y*font>canvas.height&&Math.random()>0.975)drops[i]=0;drops[i]++;
+      });
+      requestAnimationFrame(draw);
+    }
+    draw(); addEventListener("resize",resize);
+  </script>
 </body>
 </html>
